@@ -1,0 +1,4 @@
+requests_html
+python-dotenv
+instantmusic
+
