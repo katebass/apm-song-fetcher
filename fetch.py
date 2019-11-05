@@ -20,7 +20,6 @@ songs = [f'{artist} {tracklists_headlines[i]}' for i, artist in enumerate(artist
 
 for song in songs:
   download_result = os.popen(f'instantmusic -p -s "{song}"').read()
-  print(download_result)
 
   if storage_directory:
     file_name = download_result.split('[ffmpeg] Destination: ', 1)[1].split('\n', 1)[0]
